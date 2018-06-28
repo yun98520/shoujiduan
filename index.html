@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>医药手机网站</title>
+	<link rel="stylesheet" href="css/repeat.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="font/iconfont.css">
+	<meta id="viewport" name="viewport" content="width=device-width,minimum-scale=1,maximum-scale=1,user-scalable=0">
+	<script>
+    window.onload = window.onresize = function(){		 
+        var view_width = document.getElementsByTagName('html')[0].getBoundingClientRect().width;
+		//找到标签名为html的第一个
+        var _html = document.getElementsByTagName('html')[0];
+		//如果屏幕宽度大于640 
+		//就用 640/16=40
+		//小于640的时候 不确定 也是尺寸/40
+        view_width>640?_html.style.fontSize = 640 / 16 + 'px':_html.style.fontSize = view_width / 16 + 'px';
+		//最大网页尺寸640 
+		//最大字体（根字体大小） 40
+    }
+	</script>
+</head>
+<body>
+	<!-- 头部 -->
+		<div class="hd_top clearfix">
+			<span class="fl"><i class="iconfont icon-xialacaidan"></i>分类</span>
+			<div class="kuang fl">
+				<input type="text" value="输入搜索关键词">
+				<i class="iconfont icon-fangdajing"></i>
+			</div>
+			<em class="iconfont icon-gouwuchekong fr"></em>
+		</div>
+	<!-- banner -->
+	<div class="banner">
+		<img src="images/banner.png" alt="">
+		<div class="dian">
+			<em class="active"></em>
+			<em></em>
+			<em></em>
+			<em></em>
+			<em></em>
+			<em></em>
+		</div>
+	</div>
+	<!-- 导航 -->
+	<ul class="nav">
+		<li class="li1">
+			<span class="iconfont icon-yp"></span>
+			<p>中西药</p>
+		</li>
+		<li class="li2">
+			<span class="iconfont icon-ertongke"></span>
+			<p>儿童用药</p>
+		</li>
+		<li class="li3">
+			<span class="iconfont icon-shou"></span>
+			<p>皮肤用药</p>
+		</li>
+		<li class="li4">
+			<span class="iconfont icon-wenduji"></span>
+			<p>医疗器械</p>
+		</li>
+		<li class="li5">
+			<span class="iconfont icon-rencan"></span>
+			<p>养生保健</p>
+		</li>
+		<li class="li6">
+			<span class="iconfont icon-yanjing"></span>
+			<p>隐形眼镜</p>
+		</li>
+		<li class="li7">
+			<span class="iconfont icon-mianmo"></span>
+			<p>美容护肤</p>
+		</li>
+		<li class="li8">
+			<span class="iconfont icon-biyuntao"></span>
+			<p>成人用品</p>
+		</li>
+	</ul>
+	<!-- 内容 -->
+	<div class="content">
+		<div class="con1">
+			<h5><span></span>全网最低价</h5>
+			<ul class="con_bom con1_bom clearfix">
+				<li class="li1">
+					<p>【力魂】灵芝益寿胶囊</p>
+					<em>￥8.99</em>
+					<img src="images/con1_1.png" alt="">
+				</li>
+				<li class="li2">
+					<p>【永安康健】</p>
+					<p>&nbsp;&nbsp;玛咖</p>
+					<em>￥119.00</em>
+					<img src="images/con1_2.png" alt="">
+				</li>
+				<li class="li3 clearfix">
+					<img src="images/con1_3.png" alt="">
+					<i>
+						<strong>【金奥力】</strong>
+						<strong>&nbsp;&nbsp;蜂胶胶囊</strong>
+						<em>￥138.00</em>
+					</i>
+				</li>
+			</ul>
+		</div>
+		<img src="images/con1_4.png" alt="">
+		<div class="con2">
+			<h5><span></span>答谢恩师</h5>
+			<ul class="con_bom con2_bom clearfix">
+				<li class="li2">
+					<p>【恒诚】</p>
+					<p>&nbsp;&nbsp;跌打榜药酒</p>
+					<em>￥13.80</em>
+					<img src="images/con2_1.png" alt="">
+				</li>
+				<li class="li1">
+					<p>鸿茅药酒（500ml）</p>
+					<em>￥196.00</em>
+					<img src="images/con2_3.png" alt="">
+				</li>
+				<li class="li3 clearfix">
+					<img src="images/con2_2.png" alt="">
+					<i>
+						<strong>【万通】颈痛灵药酒</strong>
+						<em>￥25.00</em>
+					</i>
+				</li>
+			</ul>
+		</div>
+		<img src="images/con2_4.png" alt="">
+		<div class="con1">
+			<h5><span></span>美美哒</h5>
+			<ul class="con_bom con1_bom clearfix">
+				<li class="li1">
+					<p>【姿美堂】胶原蛋白粉</p>
+					<em>￥89.00</em>
+					<img src="images/con3_1.png" alt="">
+				</li>
+				<li class="li2 li3_2">
+					<p>新加坡DRC亮白蚕丝</p>
+					<p>精华液</p>
+					<em>￥15.80</em>
+					<img src="images/con3_2.png" alt="">
+				</li>
+				<li class="li3 clearfix">
+					<img src="images/con3_3.png" alt="">
+					<i>
+						<strong>【爱美得】</strong>
+						<strong>&nbsp;&nbsp;大眼睛睫毛膏</strong>
+						<em>￥36.00</em>
+					</i>
+				</li>
+			</ul>
+		</div>
+		<em><i class="iconfont icon-caidan"></i></em>
+	</div>
+	<!-- 底部 -->
+	<ul class="footer">
+		<li class="li1 clearfix">
+			<a href="#" class="fl">登录</a>
+			<span class="fl">|</span>
+			<a href="#" class="fl">注册</a>
+			<a href="#" class="fr">回首页<i class="iconfont icon-_home-f"></i></a>
+		</li>
+		<li class="li2">
+			<a href="#">触屏版</a>
+			<span>|</span>
+			<a href="#">电脑版</a>
+			<span>|</span>
+			<a href="#">APP版</a>
+		</li>
+		<li class="li3">
+			<span><i class="iconfont icon-zheng25"></i>正规药店</span>
+			<span><i class="iconfont icon-zhengguifapiao"></i>提供发票</span>
+			<span class="span1"><i class="iconfont icon-qitiantuihuo"></i>7天退换货</span>
+		</li>
+		<li class="li4">
+			<p>咨询电话：400-7579-818</p>
+		</li>
+	</ul>
+</body>
+</html>
